@@ -13,7 +13,7 @@ services:
       - ./conf.d:/etc/nginx/conf.d:ro
       - ./snippets:/etc/nginx/snippets:ro
       - ./security:/etc/nginx/security:ro
-      - ./sites/404.html:/usr/share/nginx/html/404.html:ro
+      - ./sites:/usr/share/nginx/html:ro
 
     networks:
       - me
